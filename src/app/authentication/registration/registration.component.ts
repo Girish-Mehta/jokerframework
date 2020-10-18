@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
+  phoneNumber: string;
+  otp;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  generateOTP() {
+    // TODO: Validate phone number and generate OTP after user clicks on submit button
+  }
+
+  verifyOTP() {
+    // TODO: Validate entered OTP with the firebase generated OTP and login the user if valid
+  }
 }
